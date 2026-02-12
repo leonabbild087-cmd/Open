@@ -1,20 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>FOULNET</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Street Session Dortmund</title>
 
-  <!-- Vorschau für Instagram/WhatsApp -->
-  <meta property="og:title" content="FOULNET – Neuer Skatevlog">
-  <meta property="og:description" content="Mittwoch bowl session online">
-  <meta property="og:image" content="https://leonabbild087-cmd.github.io/IMG_9920.jpeg">
+  <!-- Social Preview -->
+  <meta property="og:title" content="Street Session Dortmund">
+  <meta property="og:description" content="Neue Street Session online 🛹">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://leonabbild087-cmd.github.io/">
+  <meta property="og:url" content="https://leonabbild087-cmd.github.io/Open/">
+  <meta property="og:image" content="https://leonabbild087-cmd.github.io/Open/photo-output.png">
 
-  <!-- Sofortige Weiterleitung zum Video -->
-  <meta http-equiv="refresh" content="0; url=https://youtu.be/spYyFgaXWNY">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#0f0f10;color:#fff}
+    .wrap{max-width:520px;margin:0 auto;padding:22px}
+    .card{background:#17171a;border:1px solid #2a2a2f;border-radius:16px;overflow:hidden}
+    img{width:100%;display:block}
+    .p{padding:16px}
+    h1{margin:0 0 8px;font-size:22px}
+    p{margin:0 0 14px;opacity:.85}
+    .btn{display:block;text-align:center;text-decoration:none;font-weight:800;border-radius:12px;padding:14px 16px}
+    .primary{background:#ff0033;color:#fff}
+    .secondary{background:#2a2a2f;color:#fff;margin-top:10px}
+    .hint{margin-top:14px;font-size:13px;opacity:.75;line-height:1.35}
+  </style>
 </head>
 <body>
-  Weiterleitung…
+  <div class="wrap">
+    <div class="card">
+      <img src="photo-output.png" alt="Street Session Dortmund">
+      <div class="p">
+        <h1>Street Session Dortmund</h1>
+        <p>Video öffnen:</p>
+
+        <a class="btn primary" href="#" id="openApp">In der YouTube-App öffnen</a>
+        <a class="btn secondary" href="https://youtu.be/5Dh2RTyFoF0" rel="noopener">Im Browser öffnen</a>
+
+        <div class="hint">
+          Falls du aus Instagram kommst und es nicht in die App geht:
+          oben rechts (⋯) → „Im externen Browser öffnen“.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const videoId = "5Dh2RTyFoF0";
+    const webUrl  = "https://youtu.be/" + videoId;
+    const iosUrl  = "vnd.youtube://" + videoId;
+
+    document.getElementById("openApp").addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = iosUrl;
+      setTimeout(() => { window.location.href = webUrl; }, 1200);
+    });
+  </script>
 </body>
 </html>
+
