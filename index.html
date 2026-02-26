@@ -1,63 +1,109 @@
 <!doctype html>
 <html lang="de">
-<ohead>
+<head>
   <meta charset="utf-8">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
->Dortmund Streetsession ballern</title>
+
+  <title>Dortmund Streetsession ballern</title>
 
   <!-- Social Preview -->
   <meta property="og:title" content="Dortmund streetsession ballern">
-  <meta property="og:description" content="Jetzt online ">
+  <meta property="og:description" content="Jetzt online">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://leonabbild087-cmd.github.io/Open/">
   <meta property="og:image" content="https://leonabbild087-cmd.github.io/Open/IMG_0328.jpeg">
 
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#0f0f10;color:#fff}
-    .wrap{max-width:520px;margin:0 auto;padding:22px}
-    .card{background:#17171a;border:1px solid #2a2a2f;border-radius:16px;overflow:hidden}
-    img{width:100%;display:block}
-    .p{padding:16px}
-    h1{margin:0 0 8px;font-size:22px}
-    p{margin:0 0 14px;opacity:.85}
-    .btn{display:block;text-align:center;text-decoration:none;font-weight:800;border-radius:12px;padding:14px 16px}
-    .primary{background:#ff0033;color:#fff}
-    .secondary{background:#2a2a2f;color:#fff;margin-top:10px}
-    .hint{margin-top:14px;font-size:13px;opacity:.75;line-height:1.35}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      margin:0;
+      background:#0f0f10;
+      color:#fff;
+    }
+    .wrap{
+      max-width:520px;
+      margin:0 auto;
+      padding:22px;
+    }
+    .card{
+      background:#17171a;
+      border:1px solid #2a2a2f;
+      border-radius:16px;
+      overflow:hidden;
+    }
+    img{
+      width:100%;
+      display:block;
+    }
+    .p{
+      padding:16px;
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:22px;
+    }
+    p{
+      margin:0 0 14px;
+      opacity:.85;
+    }
+    .btn{
+      display:block;
+      text-align:center;
+      text-decoration:none;
+      font-weight:800;
+      border-radius:12px;
+      padding:14px 16px;
+    }
+    .primary{
+      background:#ff0033;
+      color:#fff;
+    }
+    .secondary{
+      background:#2a2a2f;
+      color:#fff;
+      margin-top:10px;
+    }
+    .hint{
+      margin-top:14px;
+      font-size:13px;
+      opacity:.75;
+      line-height:1.35;
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="card">
-      <img src="IMG_0328.jpeg" alt="Dortmund Streetsession ballern">
+
+      <!-- Bild -->
+      <img src="https://leonabbild087-cmd.github.io/Open/IMG_0328.jpeg" alt="Dortmund Streetsession ballern">
+
       <div class="p">
         <h1>Dortmund Streetsession ballern</h1>
         <p>Video öffnen:</p>
 
-        <a class="btn primary" href="#" id="openApp">In der YouTube-App öffnen</a>
-        <a class="btn secondary" href="//" rel="noopener">Im Browser öffnen</a>
+        <!-- Button öffnet YouTube-Link direkt im Browser -->
+        <a class="btn primary"
+           href="https://www.youtube.com/watch?v=kRXkHajX2Ls"
+           target="_blank"
+           rel="noopener">
+           Video im Browser öffnen
+        </a>
+
+        <!-- Zweitbutton: Browser fallback, gleiche URL -->
+        <a class="btn secondary"
+           href="https://www.youtube.com/watch?v=kRXkHajX2Ls"
+           target="_blank"
+           rel="noopener">
+           Im Browser öffnen
+        </a>
 
         <div class="hint">
-          Falls du aus Instagram kommst und es nicht direkt in die App geht:
-          oben rechts (⋯) → „Im externen Browser öffnen“.
+          Hinweis: Um die YouTube-App zu nutzen, öffne das Video im Browser und tippe dann auf „Öffnen in App“.
         </div>
       </div>
     </div>
   </div>
-
-  <script>
-    const videoId = "kRXkHakX2Ls";
-    const webUrl  = Dortmund Street Session l Wallies, Gaps
-https:"//youtu.be/kRXkHajX2Ls";
-    const iosUrl  = "vnd.youtube://" + videoId;
-
-    document.getElementById("openApp").addEventListener("click", function (e) {
-      e.preventDefault();
-      window.location.href = iosUrl;
-      setTimeout(() => { window.location.href = webUrl; }, 1200);
-    });
-  </script>
 </body>
 </html>
